@@ -48,10 +48,10 @@
 
 .hero-cta p {
     width: 584px;
-    font-style: 16px;
+    font-size: 16px;
 }
 
-.hero-cta>button {
+.hero-cta>div>button {
     width: 160px;
     height: 50px;
     background-color: #FF3147;
@@ -287,12 +287,12 @@
 
 .card {
     cursor: pointer;
+    border-radius: 0 !important;
 }
 
 .card.active {
     border: 2px solid #FF3147;
     padding: 10px;
-    border-radius: 4px;
     background-color: #FF3147;
     color: white;
 }
@@ -517,4 +517,348 @@ form {
     border: none;
     font-style: 18px;
     font-weight: bold;
+}
+
+
+@media screen and (max-width: 768px) {
+    .hero {
+        padding: 2rem 1rem;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+
+    }
+
+    .hero-cta {
+        margin-bottom: 20px;
+    }
+
+    .hero-img-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+    }
+
+    .hero-cta p {
+        width: fit-content;
+        font-size: 13px;
+    }
+
+    .hero-cta {
+        width: 100%;
+        gap: 30px;
+
+    }
+
+    .hero-cta h3 {
+        font-size: 18px;
+        margin-bottom: -20px;
+    }
+
+    .hero-cta h1 {
+        font-size: 40px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .services {
+        padding: 1rem;
+    }
+
+    .services-header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        text-align: center;
+    }
+
+    .services-header div h3 {
+        font-size: 18px;
+    }
+
+    .services-header div h1 {
+        font-size: 40px;
+    }
+
+    .services-header p {
+        font-size: 12px;
+        width: fit-content;
+    }
+
+    .services-slider {
+        gap: 1rem;
+        width: 90%;
+        overflow-x: auto;
+        margin: auto;
+    }
+
+    .slide {
+        width: 300px;
+        height: auto;
+    }
+
+    .read-more {
+        width: 100%;
+        height: 100%;
+        background-color: #FF3147;
+        transform: translateX(-100%);
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+        transition: transform 0.5s ease, opacity 0.5s ease, visibility 0.5s ease;
+    }
+
+    .read-more h3 {
+        font-size: 18px;
+    }
+
+    .read-more p {
+        font-size: 12px;
+        width: 250px;
+    }
+
+    .slider-dots {
+        margin: 0px;
+    }
+
+    .slider-dots .dot>span {
+        width: 5px;
+        height: 5px;
+    }
+
+
+    .features {
+        gap: 2rem;
+        padding: 0rem;
+        margin-top: 40px;
+    }
+
+    .feat-1 {
+        gap: 10px;
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .feat-1 h3 {
+        font-size: 18px;
+    }
+
+    .feat-1 h1 {
+        font-size: 40px;
+    }
+
+    .cards {
+        margin-top: 1rem;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .cards div {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards div img {
+        width: 52px;
+        height: 52px;
+    }
+
+    .card.active {
+        border: 2px solid #FF3147;
+        padding: 10px;
+        background-color: #FF3147;
+        color: white;
+    }
+
+    .project {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .project img {
+        margin-top: 2rem;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    .project-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-cards div {
+        width: 110px;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .project-cards div h4 {
+        font-size: 10px;
+    }
+
+    .project-cards div p {
+        font-size: 6px;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project img {
+        width: 80%;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .project-cards {
+        width: 90%;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards div {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .growth {
+        padding: 0rem;
+        margin-top: 50px;
+    }
+
+    .numbers {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .numbers div {
+        width: 200px;
+        height: 200px;
+        gap: 10px;
+    }
+
+    .numbers div h2 {
+        font-size: 30px;
+    }
+
+    .numbers div p {
+        font-size: 15px;
+    }
+
+    .feedback {
+        padding: 0;
+        padding-top: 4rem;
+        width: 100%;
+    }
+
+    .feedback-message {
+        position: relative;
+    }
+
+    .feedback-message div p {
+        width: fit-content;
+        height: auto !important;
+        font-size: 14px;
+        margin: 0 1rem;
+    }
+
+    .feedback-message div img {
+        display: none;
+
+    }
+
+    .feedback-message div span {
+        font-size: 10px;
+    }
+
+    footer {
+        position: relative;
+    }
+
+    .footer-img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        bottom: 0;
+    }
+
+    footer div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        position: relative;
+
+    }
+
+    footer div img {
+        z-index: 55;
+        height: auto;
+        width: 90vw;
+        position: absolute;
+        bottom: 15px;
+        left: 25px;
+
+    }
+
+    .modal-dialog {
+        margin: 4px;
+    }
+
+    .modal-content {
+        padding: 20px;
+    }
+
+    .modal-body {
+        padding: 20px;
+    }
+
+    .name {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .work-email {
+        width: 100%;
+    }
+
+    .submit-btn {
+        width: 100%;
+    }
+
+    .checkbox{
+        font-size: 12px;
+    }
 }
